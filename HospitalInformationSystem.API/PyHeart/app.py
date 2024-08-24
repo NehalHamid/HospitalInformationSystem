@@ -1,0 +1,15 @@
+﻿import torch.nn as nn
+import torch
+
+class YourModel(nn.Module):
+    def _init_(self):
+        super(YourModel, self)._init_()
+        # Define your model layers here
+    
+    def forward(self, x):
+        # Define forward pass
+        return x
+
+model = YourModel()
+model.load_state_dict(torch.load('C:\Users\c.delivery for lap\source\repos\HospitalInformationSystem\HospitalInformationSystem.API\PyHeart\model.pth'))
+model.eval()
